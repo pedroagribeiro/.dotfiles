@@ -6,6 +6,9 @@ cd "${BASE_DIR}/.." || exit 127
 # shellcheck source=../scripts/execs.sh
 . scripts/execs.sh
 
+# shellcheck source=../scripts/distro.sh
+. scripts/distro.sh
+
 ASDF_PATH_DIR="$HOME/.asdf"
 
 execute "git clone https://github.com/asdf-vm/asdf.git $ASDF_PATH_DIR" "Clonning asdf git repository..."
