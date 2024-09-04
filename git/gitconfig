@@ -2,9 +2,11 @@
   name = Pedro Ribeiro
   useConfigOnly = true
 [include]
-    path = ~/.dotfiles/git/configs/personal.config
+    path = ~/.dotfiles/git/configs/linux/personal.config
+[includeIf "env:GIT_OS=macos"]
+    path = ~/.dotfiles/git/configs/macos/personal.config
 [includeIf "gitdir:~/Code/alticelabs/"]
-    path = ~/.dotfiles/git/configs/alticelabs.config
+    path = ~/.dotfiles/git/configs/linux/alticelabs.config
 [web]
   browser = google-chrome-stable
 [core]

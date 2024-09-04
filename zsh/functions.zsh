@@ -121,3 +121,11 @@ function show_ip() {
 function get_location_gps() {
   curl -s "https://location.services.mozilla.com/v1/geolocate?key=geoclue" | awk 'OFS=":" {print $3,$5}' | tr -d ',}'
 }
+
+function get_git_os() {
+  if [[ "$OSTYPE" == darwin* ]]; then
+    echo "macos"
+  else 
+    echo "linux"
+  fi
+}
