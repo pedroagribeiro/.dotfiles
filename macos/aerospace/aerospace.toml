@@ -112,6 +112,16 @@ run = "move-node-to-workspace 2"
 if.app-id = 'com.github.wez.wezterm'
 run = "move-node-to-workspace 2"
 
+# |__ iTERM2 __|
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+run = "move-node-to-workspace 2"
+
+# |__ TERMINAL __|
+[[on-window-detected]]
+if.app-id = 'com.apple.Terminal'
+run = "move-node-to-workspace 2"
+
 # |__ ARC BROWSER __|
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
@@ -122,12 +132,23 @@ run = "move-node-to-workspace 3"
 if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace 3"
 
-# |__ CODE __|
+# |__ VSCODE __|
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 run = "move-node-to-workspace 6"
+
+# |__ AFFINITY DESIGNER 2 __|
+[[on-window-detected]]
+if.app-id = 'com.seriflabs.affinitydesigner2'
+run = "move-node-to-workspace 7"
+
+# |__ AFFINITY PHOTO 2 __|
+[[on-window-detected]]
+if.app-id = 'com.seriflabs.affinityphoto2'
+run = "move-node-to-workspace 8"
 
 # |__ SPOTIFY __|
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = "move-node-to-workspace 10"
+
