@@ -26,7 +26,7 @@ end
 
 config.color_scheme = get_color_scheme_by(wezterm.gui.get_appearance())
 
-config.font = wezterm.font('FiraCode Nerd Font')
+config.font = wezterm.font('MesloLGL Nerd Font')
 config.font_size = 15
 
 config.enable_scroll_bar = false
