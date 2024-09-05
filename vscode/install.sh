@@ -12,7 +12,7 @@ cd "${BASE_DIR}/.." || exit 127
 
 
 LINUX_CONF_DIR="$HOME/.config/Code/User"
-MACOS_CONF_DIR="$HOME/Library/Application Support/Code/User"
+MACOS_CONF_DIR="$HOME/Library/Application\ Support/Code/User"
 
 EXTENSIONS=()
 
