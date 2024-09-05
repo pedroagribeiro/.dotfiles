@@ -5,6 +5,9 @@
 #    _ / /\__ \ | | | | | (__
 #   (_)___|___/_| |_|_|  \___|
 
+# GoLang
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
+
 export DOTFILES="$HOME/.dotfiles"
 # export SPELLS="$HOME/.spells"
 
