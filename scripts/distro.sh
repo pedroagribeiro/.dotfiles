@@ -13,6 +13,13 @@ function symlink() {
   execute "ln -sf ${SRC} ${DST}" "Symlinking $(basename $DST)"
 }
 
+function symlink_dir() {
+  local SRC="$1"
+  local DST="$2"
+
+  execute "ln -s ${SRC} ${DST}" "Symlinking directory $(basename $DST)"
+}
+
 function install_package() {
   local PKG="$1"
 
