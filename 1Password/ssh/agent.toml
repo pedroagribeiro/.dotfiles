@@ -1,0 +1,9 @@
+# Add my Git signing key from my Personal vault
+[[ssh-keys]]
+item = "GitHub Signing Key [pedroagribeiro]"
+vault = "Personal"
+
+# Add my Git signing key from my Work vault
+[[ssh-keys]]
+item = "GitHub Signing Key [pedro-alexandre-ribeiro]"
+vault = "Work"
