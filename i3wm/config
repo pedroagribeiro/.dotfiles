@@ -138,4 +138,4 @@ exec_always --no-startup-id nm-applet
 exec --no-startup-id picom --config ~/.dotfiles/picom/picom.conf -b
 
 # Launch polybar
-exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
+exec_always --no-startup-id ~/.dotfiles/spells/i3wm/polybar_launch.sh
