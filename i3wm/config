@@ -135,7 +135,7 @@ bindsym $mod+Shift+s exec --no-startup-id flameshot gui -c -p $print_path
 # Startup commands
 exec --no-startup-id feh --bg-scale ~/.dotfiles/wallpapers/sunset.jpg
 exec_always --no-startup-id nm-applet
-exec --no-startup-id picom --config ~/.dotfiles/picom/picom.conf -b
+exec --no-startup-id picom -b --config ~/.dotfiles/picom/picom.conf
 
 # Launch polybar
 exec_always --no-startup-id ~/.dotfiles/spells/i3wm/polybar_launch.sh
