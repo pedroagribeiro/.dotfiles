@@ -1,0 +1,15 @@
+configuration {
+	modi: "drun,window,run";
+	lines: 10;
+	font: "MesloLGL Nerd Font 11";
+	show-icons: true;
+	combi-modi: "drun,window";
+	display-window: "Window";
+	display-run: "Run";
+	display-drun: "Search";
+	display-combi: "";
+	display-emoji: "Emoji";
+	display-calc: "Calculator";
+}
+
+@theme "~/.dotfiles/rofi/themes/oxide.rafi"
