@@ -20,9 +20,9 @@ while IFS= read -r line; do
     EXTENSIONS+=("$line")
 done < "$HOME/.dotfiles/vscode/extensions.txt"
 
-# for extension in "${EXTENSIONS[@]}"; do
-#     code --install-extension $extension
-# done
+for extension in "${EXTENSIONS[@]}"; do
+    code --install-extension $extension
+done
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     mkdir -p $MACOS_CONF_DIR
