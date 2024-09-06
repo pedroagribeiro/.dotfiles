@@ -128,6 +128,15 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
+# Open applications on specific workspaces
+assign [class="Slack"]           $ws1
+assign [class="Google-chrome"]   $ws3
+assign [class="code-oss"]        $ws6
+assign [class="Code"]            $ws6
+assign [class="jetbrains-idea"]  $ws7
+assign [class="Spotify"]         $ws10
+for_window [class="Spotify"] move to workspace $ws10
+
 # Printscreen utility
 set $print_path ~/Pictures/Screenshots
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui -c -p $print_path
