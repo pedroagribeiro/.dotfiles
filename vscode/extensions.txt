@@ -21,3 +21,4 @@ vscodevim.vim
 tomoki1207.pdf
 Postman.postman-for-vscode
 streetsidesoftware.code-spell-checker
+GitHub.github-vscode-theme
