@@ -132,13 +132,10 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 set $print_path ~/Pictures/Screenshots
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui -c -p $print_path
 
-# Starting the i3 status bar
-bar {
-	status_command i3status
-	tray_output primary
-}
-
 # Startup commands
 exec --no-startup-id feh --bg-scale ~/.dotfiles/wallpapers/sunset.jpg
 exec_always --no-startup-id nm-applet
 exec --no-startup-id picom --config ~/.dotfiles/picom/picom.conf -b
+
+# Launch polybar
+exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
