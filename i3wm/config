@@ -142,7 +142,7 @@ set $print_path ~/Pictures/Screenshots
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui -c -p $print_path
 
 # Startup commands
-exec --no-startup-id feh --bg-scale ~/.dotfiles/wallpapers/leaves.jpg
+exec --no-startup-id feh --bg-scale ~/.dotfiles/wallpapers/railroad.jpg
 exec_always --no-startup-id nm-applet
 exec --no-startup-id picom -b --config ~/.dotfiles/picom/picom.conf
 
