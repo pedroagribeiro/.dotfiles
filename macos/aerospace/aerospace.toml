@@ -45,9 +45,6 @@ cmd-shift-right = 'move right'
 # Reload the configuration fil
 cmd-shift-r = 'reload-config'
 
-# Change container layout (stacked, tabbed, toggle split, toggle fullscreen)
-cmd-shift-f = 'fullscreen'
-
 # Switch to workspace and set workspace names
 cmd-1 = 'workspace 1'
 cmd-2 = 'workspace 2'
