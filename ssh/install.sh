@@ -10,4 +10,8 @@ cd "${BASE_DIR}/.." || exit 127
 # shellcheck source=../scripts/utils.sh
 . scripts/utils.sh
 
-symlink ~/.dotfiles/ssh/config ~/.ssh/config
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    symlink ~/.dotfiles/ssh/config_macos ~/.ssh/config
+else
+    symlink ~/.dotfiles/ssh/config_linux ~/.ssh/config
+fi
