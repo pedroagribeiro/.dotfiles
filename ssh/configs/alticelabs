@@ -1,0 +1,11 @@
+Host ol8maintests
+    HostName 10.112.45.203
+    User agorang
+    IdentityAgent ~/.1password/agent.sock
+    IdentityFile none
+
+Host cl9
+    HostName 10.112.45.225
+    User agorang
+    IdentityAgent ~/.1password/agent.sock
+    IdentityFile none
