@@ -12,6 +12,6 @@ cd "${BASE_DIR}/.." || exit 127
 
 ask_for_sudo
 
-# install_package bspwm 
+# install_package sxhkd 
 
-symlink "$HOME/.dotfiles/bspwm/bspwmrc" "$HOME/.config/bspwm/bspwmrc"
+symlink "$HOME/.dotfiles/sxhkd/sxhkd" "$HOME/.config/sxhkd/sxhkdrc"
