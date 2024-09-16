@@ -11,15 +11,15 @@ window:
 
 font:
   normal:
-    family: SauceCodePro Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Medium
 
   bold:
-    family: SauceCodePro Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold
 
   italic:
-    family: SauceCodePro Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Italic
 
   size: 12.0
