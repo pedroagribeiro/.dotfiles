@@ -1,0 +1,39 @@
+# Run terminal
+super + Return
+    alacritty
+
+# Close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# Restart bspwm
+super + shift + r
+    bspc wm -r
+
+super + shift + x
+	pkill -USR1 -x sxhkd
+
+# Launch rofi
+super + @space
+    rofi -show combi
+
+super + comma
+    rofi -show window
+
+super + period
+    rofi -show emoji
+
+# Focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Screenshot with Flameshot
+super + shift + s
+    flameshot gui -c -p ~/Pictures/Screenshots
