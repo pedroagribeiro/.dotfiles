@@ -11,15 +11,15 @@ window:
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font
-    style: Regular
+    family: SauceCodePro Nerd Font
+    style: Medium
 
   bold:
-    family: JetBrainsMono Nerd Font
+    family: SauceCodePro Nerd Font
     style: Bold
 
   italic:
-    family: JetBrainsMono Nerd Font
+    family: SauceCodePro Nerd Font
     style: Italic
 
   size: 12.0
@@ -82,6 +82,48 @@ schemes:
       magenta: "#a36ac7"
       cyan: "#3971ed"
       white: "#ffffff"
+
+  vscode: &vscode
+    name: VSCode
+    primary:
+      background: '#191919'
+      foreground: '#d8dee9'
+    cursor:
+      text: '#191919'
+      cursor: '#d8dee9'
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: CellForeground
+    selection:
+      text: '#191919'
+      background: '#d8dee9'
+    normal:
+      black:   '#191919'
+      red:     '#b02626'
+      green:   '#40a62f'
+      yellow:  '#f2e635'
+      blue:    '#314ad0'
+      magenta: '#b30ad0'
+      cyan:    '#32d0fc'
+      white:   '#acadb1'
+    bright:
+      black:   '#36393d'
+      red:     '#ce2727'
+      green:   '#47c930'
+      yellow:  '#fff138'
+      blue:    '#2e4bea'
+      magenta: '#cc15ed'
+      cyan:    '#54d9ff'
+      white:   '#dbdbdb'
+    dim:
+      black:   '#676f78'
+      red:     '#000000'
+      green:   '#78a670'
+      yellow:  '#faf380'
+      blue:    '#707fd0'
+      magenta: '#c583d0'
+      cyan:    '#8adaf1'
+      white:   '#e0e3e7'
 
   rose-pine: &rose_pine
     name: Rose Pine 
@@ -147,4 +189,4 @@ schemes:
       cyan: "#ebbcba"
       white: "#e0def4"
 
-colors: *rose_pine
+colors: *vscode
