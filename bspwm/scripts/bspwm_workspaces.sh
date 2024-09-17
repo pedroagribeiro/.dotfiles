@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 bspc subscribe monitor | while read -r line; do
   case $line in
       monitor_add*|monitor_geometry*)

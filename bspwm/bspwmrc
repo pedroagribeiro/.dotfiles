@@ -1,29 +1,32 @@
 #!/bin/sh
+
+# <=========== CLEANUP ===========>
 bspc rule -r "*"
 
-# bspc wm -O DP-1 eDP-1 
-# bscp monitor DP-1-0 -d 1 2 3 4 5 6 7 9
-# bscp monitor eDP-1 -d 10
-
+# <=========== STARTUP ===========>
 xsetroot -cursor_name left_ptr
-~/.dotfiles/bspwm/bspwm_workspaces.sh &
+
+# Utilities startup
 nm-applet &
 sxhkd &
 1password --silent &
+flameshot &
+
+# Display configurations
+python3 ~/.dotfiles/bspwm/scripts/detect_setup.py &
 # picom -b --config ~/.dotfiles/picom/picom.conf &
 compton --config ~/.dotfiles/compton/compton.conf &
-feh --bg-scale ~/.dotfiles/wallpapers/railroad.jpg &
-flameshot &
+feh --bg-scale ~/.dotfiles/wallpapers/sunset.jpg &
 ~/.dotfiles/spells/i3wm/polybar_launch.sh &
 
-###---Global Settings---###
-bspc config automatic_scheme alternate
-bspc config initial_polarity second_child
-bspc config pointer_modifier lock
-bspc config pointer_action1 move
-bspc config pointer_action2 resize_side
-bspc config pointer_action3 resize_corner
-bspc config click_to_focus none
+# <=========== GLOBAL SETTINGS ===========>
+bspc config automatic_scheme    alternate
+bspc config initial_polarity    second_child
+bspc config pointer_modifier    lock
+bspc config pointer_action1     move
+bspc config pointer_action2     resize_side
+bspc config pointer_action3     resize_corner
+bspc config click_to_focus      none
 
 bspc config focus_follows_pointer       true
 bspc config remove_disabled_monitors    true
@@ -37,12 +40,12 @@ bspc config presel_feedback_color	"#327bd1"
 bspc config urgent_border_color     "#dd2727"
 
 ###---Monitor And Desktop Settings----###
-bspc config top_padding 32
-bspc config bottom_padding 0
-bspc config left_padding 0
-bspc config right_padding 0
-bspc config border_width 2
-bspc config window_gap 10
+bspc config top_padding     32
+bspc config bottom_padding  0
+bspc config left_padding    0
+bspc config right_padding   0
+bspc config border_width    2
+bspc config window_gap      10
 
 ###---Rules---###
 bspc rule -a mpv state=fullscreen
