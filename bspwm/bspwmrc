@@ -10,7 +10,8 @@ xsetroot -cursor_name left_ptr
 nm-applet &
 sxhkd &
 1password --silent &
-picom -b --config ~/.dotfiles/picom/picom.conf &
+# picom -b --config ~/.dotfiles/picom/picom.conf &
+compton --config ~/.dotfiles/compton/compton.conf &
 feh --bg-scale ~/.dotfiles/wallpapers/railroad.jpg &
 flameshot &
 ~/.dotfiles/spells/i3wm/polybar_launch.sh &
