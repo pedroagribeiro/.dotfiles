@@ -24,10 +24,11 @@ local function get_color_scheme_by(appearance)
   end
 end
 
-config.color_scheme = get_color_scheme_by(wezterm.gui.get_appearance())
+-- config.color_scheme = get_color_scheme_by(wezterm.gui.get_appearance())
+config.color_scheme = 'Dark+'
 
 config.font = wezterm.font('JetBrainsMono Nerd Font')
-config.font_size = 15
+config.font_size = 12
 
 config.enable_scroll_bar = false
 
