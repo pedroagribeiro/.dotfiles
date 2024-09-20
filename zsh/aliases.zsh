@@ -81,3 +81,8 @@ alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config
 alias ip='ip -c=auto'
 
 alias activate-ssh='eval $(ssh-agent -s); ssh-add ~/.ssh/id_rsa'
+
+# Work Aliases
+alias agjobsch="cd $HOME/Code/alticelabs/git/agora-jobscheduler" 
+alias agbaa="cd $HOME/Code/alticelabs/git/agora-baa"
+
