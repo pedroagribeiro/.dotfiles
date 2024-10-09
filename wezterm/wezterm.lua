@@ -12,7 +12,7 @@ local wezterm = require('wezterm')
 local config = wezterm.config_builder()
 
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1.0
 config.macos_window_background_blur = 30
 config.win32_system_backdrop = "Acrylic"
 
@@ -25,12 +25,11 @@ local function get_color_scheme_by(appearance)
 end
 
 -- config.color_scheme = get_color_scheme_by(wezterm.gui.get_appearance())
-config.color_scheme = 'Dark+'
-
-config.font = wezterm.font('JetBrainsMono Nerd Font')
+config.color_scheme = "Poimandres"
+config.font = wezterm.font('SF Mono Nerd Font')
 config.font_size = 12
 
-config.enable_scroll_bar = false
+config.enable_scroll_bar = true
 
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
