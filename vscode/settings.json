@@ -1,7 +1,5 @@
 {
   "window.commandCenter": true,
-  "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Default Dark+",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
@@ -10,14 +8,15 @@
   "editor.cursorStyle": "block",
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontSize": 15,
-  "editor.experimentalInlineEdit.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "SFMono Nerd Font",
+  "editor.fontWeight": 550,
+  "editor.fontSize": 14.5,
+  "editor.experimentalInlineEdit.fontFamily": "SFMono Nerd Font",
+  "editor.inlineSuggest.fontFamily": "SFMono Nerd Font",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontSize": 15,
+  "debug.console.fontFamily": "SFMono Nerd Font",
+  "terminal.integrated.fontFamily": "SFMono Nerd Font",
+  "terminal.integrated.fontSize": 14.5,
   "prettier.configPath": ".prettierrc.mjs",
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
@@ -27,5 +26,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "thunder-client.saveToWorkspace": true,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "poimandres"
 }
