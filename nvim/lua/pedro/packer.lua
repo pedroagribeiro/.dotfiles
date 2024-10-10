@@ -15,4 +15,6 @@ return require('packer').startup(function(use)
 
     use('martinsione/darkplus.nvim')
 
+    use('olivercederborg/poimandres.nvim')
+
 end)
