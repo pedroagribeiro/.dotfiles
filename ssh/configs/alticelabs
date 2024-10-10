@@ -9,3 +9,16 @@ Host cl9
     User agorang
     IdentityAgent ~/.1password/agent.sock
     IdentityFile none
+
+Host agora-sdan
+    Hostname 172.21.217.74
+    User agorang
+    IdentityAgent ~/.1password/agent.sock
+    IdentityFile none
+
+Host agora-sdan2
+    Hostname 172.21.217.86
+    User agorang
+    IdentityAgent ~/.1password/agent.sock
+    IdentityFile none
+
