@@ -11,10 +11,12 @@ local wezterm = require('wezterm')
 
 local config = wezterm.config_builder()
 
-config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE"
 config.window_background_opacity = 1.0
 config.macos_window_background_blur = 30
 config.win32_system_backdrop = "Acrylic"
+
+config.default_domain = 'WSL:Ubuntu-24.04'
 
 local function get_color_scheme_by(appearance)
   if appearance:find "Dark" then
@@ -26,15 +28,15 @@ end
 
 -- config.color_scheme = get_color_scheme_by(wezterm.gui.get_appearance())
 config.color_scheme = "Poimandres"
-config.font = wezterm.font('SF Mono Nerd Font')
+config.font = wezterm.font('Consolas NF')
 config.font_size = 12
 
 config.enable_scroll_bar = true
 
 config.enable_tab_bar = true
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 config.show_tabs_in_tab_bar = true
-config.show_new_tab_button_in_tab_bar = false
+config.show_new_tab_button_in_tab_bar = true
 config.tab_bar_at_bottom = true
 
 config.leader = {
