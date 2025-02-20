@@ -13,6 +13,7 @@
   excludesfile = ~/.dotfiles/git/gitignore
   attributesfile = ~/.dotfiles/git/gitattributes
   pager = delta
+	sshCommand = ssh.exe
 [init]
   defaultBranch = main
 [interactive]
