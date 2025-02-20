@@ -7,25 +7,31 @@
   "editor.renderWhitespace": "trailing",
   "editor.cursorStyle": "block",
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "SFMono Nerd Font",
-  "editor.fontWeight": 550,
+  "editor.fontFamily": "Consolas NF",
   "editor.fontSize": 14.5,
-  "editor.experimentalInlineEdit.fontFamily": "SFMono Nerd Font",
-  "editor.inlineSuggest.fontFamily": "SFMono Nerd Font",
+  "editor.experimentalInlineEdit.fontFamily": "Consolas NF",
+  "editor.inlineSuggest.fontFamily": "Consolas NF",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "debug.console.fontFamily": "SFMono Nerd Font",
-  "terminal.integrated.fontFamily": "SFMono Nerd Font",
+  "debug.console.fontFamily": "Consolas NF",
+  "terminal.integrated.fontFamily": "Consolas NF",
   "terminal.integrated.fontSize": 14.5,
   "prettier.configPath": ".prettierrc.mjs",
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "thunder-client.saveToWorkspace": true,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "poimandres"
+  "workbench.colorTheme": "GitHub Dark"
 }

@@ -30,4 +30,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     mkdir -p $LINUX_CONF_DIR
     symlink "$HOME/.dotfiles/vscode/settings.json" "$LINUX_CONF_DIR/settings.json"
+    cp "$HOME/.dotfiles/vscode/settings.json" "/mnt/c/Users/Pedro\ Ribeiro/AppData/Roaming/Code/User/settings.json"
 fi
