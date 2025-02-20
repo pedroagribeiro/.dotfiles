@@ -63,3 +63,9 @@ fi
 
 # Set git os variable 
 export GIT_OS=$(get_git_os)
+
+# Cursor
+export PATH="$PATH:/mnt/c/Users/Pedro Ribeiro/AppData/Local/Programs/cursor/resources/app/bin"
+
+# Created by `pipx` on 2025-01-10 14:00:47
+export PATH="$PATH:/home/pedro/.local/bin"
