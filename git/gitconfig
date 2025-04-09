@@ -13,7 +13,6 @@
   excludesfile = ~/.dotfiles/git/gitignore
   attributesfile = ~/.dotfiles/git/gitattributes
   pager = delta
-	sshCommand = ssh.exe
 [init]
   defaultBranch = main
 [interactive]
@@ -72,4 +71,4 @@
 [url "git@gitlab.com:"]
   insteadOf = glx:
 [url "git@bitbucket.org:"]
-	insteadOf = https://bitbucket.org/
+  insteadOf = https://bitbucket.org/
