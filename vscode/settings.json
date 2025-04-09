@@ -9,14 +9,14 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "Consolas NF",
-  "editor.fontSize": 14.5,
-  "editor.experimentalInlineEdit.fontFamily": "Consolas NF",
-  "editor.inlineSuggest.fontFamily": "Consolas NF",
+  "editor.fontFamily": "JetBrains Mono Nerd Font",
+  "editor.fontSize": 14,
+  "editor.experimentalInlineEdit.fontFamily": "JetBrains Mono Nerd FonF",
+  "editor.inlineSuggest.fontFamily": "JetBrains Mono Nerd FonF",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "debug.console.fontFamily": "Consolas NF",
-  "terminal.integrated.fontFamily": "Consolas NF",
-  "terminal.integrated.fontSize": 14.5,
+  "debug.console.fontFamily": "JetBrains Mono Nerd FonF",
+  "terminal.integrated.fontFamily": "JetBrains Mono Nerd FonF",
+  "terminal.integrated.fontSize": 14,
   "prettier.configPath": ".prettierrc.mjs",
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
@@ -33,5 +33,6 @@
   },
   "thunder-client.saveToWorkspace": true,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "GitHub Dark"
+  "workbench.colorTheme": "GitHub Dark",
+  "explorer.confirmDelete": false
 }
