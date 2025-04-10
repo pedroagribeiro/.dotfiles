@@ -69,3 +69,5 @@ export PATH="$PATH:/mnt/c/Users/Pedro Ribeiro/AppData/Local/Programs/cursor/reso
 
 # Created by `pipx` on 2025-01-10 14:00:47
 export PATH="$PATH:/home/pedro/.local/bin"
+
+if [ -e /home/pedro/.nix-profile/etc/profile.d/nix.sh ]; then . /home/pedro/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
