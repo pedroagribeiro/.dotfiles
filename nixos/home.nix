@@ -1,4 +1,4 @@
-{
+{ 
   config,
   lib,
   pkgs,
@@ -53,12 +53,18 @@ with lib.hm.gvariant;
     yazi
     zoxide
     # dev utils
+    bison
+    fontforge
+    makeWrapper
     autoconf
     automake
     btop
     fop
-    gcc
+    # gcc
+    zlib
     gnumake
+    libiconv
+    libtool
     hyperfine
     inotify-tools
     pkg-config
@@ -80,19 +86,19 @@ with lib.hm.gvariant;
     cpufetch
 
     # build Erlang/OTP with Kerl
-    # flex
-    # gnused
-    # libGL
-    # libGLU
-    # libressl
-    # ncurses
-    # openjdk
+    flex
+    gnused
+    libGL
+    libGLU
+    libressl
+    ncurses
+    openjdk
     # openssl
-    # perl
-    # termcap
-    # unixODBC
-    # wxGTK32
-    # wxc
+    perl
+    termcap
+    unixODBC
+    wxGTK32
+    wxc
 
     # gnome
     wmctrl
@@ -111,7 +117,7 @@ with lib.hm.gvariant;
 
     elixir_1_18
     erlang_27
-    ruby_3_4
+    # ruby_3_4
     nodejs_23
     go
 
