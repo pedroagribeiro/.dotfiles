@@ -4,6 +4,11 @@
 #     |_  / __| '_ \| '__/ __|
 #    _ / /\__ \ | | | | | (__
 #   (_)___|___/_| |_|_|  \___|
+#
+
+# Ruby
+# export PATH="/home/pedro/.local/share/gem/ruby/3.4.0/bin:$PATH"
+export PATH="/home/pedro/bin:$PATH"
 
 # GoLang
 export ASDF_GOLANG_MOD_VERSION_ENABLED=true
