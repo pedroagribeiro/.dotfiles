@@ -9,14 +9,16 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "Hack Nerd Font",
-  "editor.fontSize": 14.5,
-  "editor.experimentalInlineEdit.fontFamily": "Hack Nerd Font",
-  "editor.inlineSuggest.fontFamily": "Hack Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 16,
+  "editor.fontWeight": 550,
+  "editor.experimentalInlineEdit.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "debug.console.fontFamily": "Hack Nerd Font",
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.integrated.fontSize": 15,
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": 550,
   "prettier.configPath": ".prettierrc",
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
@@ -33,6 +35,11 @@
   },
   "thunder-client.saveToWorkspace": true,
   "workbench.startupEditor": "none",
+  "explorer.confirmDelete": false,
   "workbench.colorTheme": "GitHub Dark",
-  "explorer.confirmDelete": false
+  "rubyLsp.rubyExecutablePath": "/usr/bin/ruby",
+  "rubyLsp.addonSettings": {},
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "auto"
+  }
 }
