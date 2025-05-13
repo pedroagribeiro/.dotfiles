@@ -36,10 +36,10 @@
   "thunder-client.saveToWorkspace": true,
   "workbench.startupEditor": "none",
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "GitHub Dark",
   "rubyLsp.rubyExecutablePath": "/usr/bin/ruby",
   "rubyLsp.addonSettings": {},
   "rubyLsp.rubyVersionManager": {
     "identifier": "auto"
-  }
+  },
+  "workbench.colorTheme": "Rosé Pine (no italics)"
 }

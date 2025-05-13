@@ -5,6 +5,8 @@
 #    _ / /\__ \ | | | | | (__
 #   (_)___|___/_| |_|_|  \___|
 #
+# Direnv
+eval "$(direnv hook zsh)"
 
 # Ruby
 # export PATH="/home/pedro/.local/share/gem/ruby/3.4.0/bin:$PATH"
