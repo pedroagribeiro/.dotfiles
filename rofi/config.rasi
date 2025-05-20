@@ -1,15 +1,30 @@
-configuration {
-	modi: "drun,window,run";
-	lines: 10;
-	font: "SFMono Nerd Font Medium 11";
-	show-icons: true;
-	combi-modi: "drun,window";
-	display-window: "Window";
-	display-run: "Run";
-	display-drun: "Search";
-	display-combi: "";
-	display-emoji: "Emoji";
-	display-calc: "Calculator";
+// configuration {
+// 	modi: "drun,window,run";
+// 	lines: 10;
+// 	font: "SFMono Nerd Font Medium 11";
+// 	show-icons: true;
+// 	combi-modi: "drun,window";
+// 	display-window: "Window";
+// 	display-run: "Run";
+// 	display-drun: "Search";
+// 	display-combi: "";
+// 	display-emoji: "Emoji";
+// 	display-calc: "Calculator";
+// }
+
+configuration{
+    modi: "run,drun,window";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
 }
 
-@theme "~/.dotfiles/rofi/themes/rounded-nord-dark.rasi"
+@theme "~/.dotfiles/rofi/themes/catpuccin.rasi"
