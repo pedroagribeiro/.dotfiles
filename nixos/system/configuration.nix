@@ -20,12 +20,13 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "thinkpad"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
+
+  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -58,6 +59,21 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services = {
+    login.enableGnomeKeyring = true;
+    gdm.enableGnomeKeyring = true;
+  };
+
+  environment.gnome.excludePackages = with pkgs; [
+    epiphany
+    geary
+    gedit
+    gnome-characters
+    gnome-console
+    gnome-tour
+    yelp
+  ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -88,6 +104,9 @@
   # services.xserver.libinput.enable = true;
 
   programs.zsh.enable = true;
+
+  virtualisation.docker.enable = true;
+
   programs.nix-ld.enable = true;
 
   programs._1password.enable = true;
@@ -95,8 +114,6 @@
     enable = true;
     polkitPolicyOwners = [ "pedro" ];
   };
-
-  virtualisation.docker.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.pedro = {
@@ -127,18 +144,20 @@
       vscode
       jetbrains.idea-ultimate
       maven
-      postman
       mise
-      obsidian
     ];
     shell = pkgs.zsh;
   };
+
 
   # Install firefox.
   programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Fingerprint reader
+  services.fprintd.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -147,31 +166,27 @@
     spotify
     ulauncher
     ghostty
-    kitty
-    waybar
     wofi
     egl-wayland
     zen-browser.packages.${pkgs.system}.default
+    home-manager
+
+    #security
+    fprintd
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-emoji
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.geist-mono
+  ];
 
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
