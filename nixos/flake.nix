@@ -12,6 +12,11 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    cursor = {
+      url = "github:omarcresp/cursor-flake/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     {
@@ -19,6 +24,7 @@
       nixpkgs,
       home-manager,
       zen-browser,
+      cursor,
     }:
     let
       system = "x86_64-linux";
@@ -28,7 +34,7 @@
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt-rfc-style;
 
       nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit zen-browser; };
+        specialArgs = { inherit zen-browser; inherit cursor; };
         modules = [
           ./system/configuration.nix
           home-manager.nixosModules.home-manager

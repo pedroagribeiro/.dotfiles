@@ -10,6 +10,6 @@ cd "${BASE_DIR}/.." || exit 127
 # shellcheck source=../scripts/utils.sh
 . scripts/utils.sh
 
-#ask_for_sudo
+ask_for_sudo
 
 symlink ~/.dotfiles/nix/nix.conf ~/.config/nix/nix.conf

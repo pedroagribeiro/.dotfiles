@@ -29,110 +29,94 @@ with lib.hm.gvariant;
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    # shell
-    zsh
-    # dev tools
+    # core utils
+    _1password-cli
+    _1password-gui
     bat
-    bruno
-    # cloudflared
     curl
-    delta
-    difftastic
     eza
     fd
+    ffmpeg-full
+    fop
     fzf
-    gh
-    git
-    gitleaks
+    imagemagick
     jq
-    k6
-    # stripe-cli
-    # mise
-    neovim
     ripgrep
-    scc
-    shellcheck
-    shfmt
+    unzip
     wget
     yazi
     zoxide
-    # dev utils
-    bison
-    fontforge
-    makeWrapper
+    zsh
+
+
+    # build tools
     autoconf
     automake
-    btop
-    fop
-    # gcc
-    zlib
+    gcc
     gnumake
-    libiconv
-    libtool
-    hyperfine
-    inotify-tools
     pkg-config
+
+    # development tools
+    mise
+    bruno
+    k6
+    llvmPackages_20.clang-tools
+    shellcheck
+    shfmt
+    typst
+    watchman
+
+    # version control
+    delta
+    difftastic
+    gh
+    git
+    git-who
+    gitleaks
+    jujutsu
+
+    # containers & cloud
+    docker
+    docker-compose
     podman
     podman-compose
+
+    # performance & benchmarking
+    btop
+    hyperfine
+    scc
     speedtest-cli
-    unzip
-    watchman
-    # tools
-    ffmpeg-full
-    imagemagick
-    impression
+
+    # editors & IDEs
+    neovim
+    sc-im
+
+    # desktop apps
+    # _1password-gui
+    gimp
     inkscape
     libreoffice
-    sc-im
-    # system tools
-    neofetch
-    onefetch
-    cpufetch
+    zeal
+    vscode
 
-    # build Erlang/OTP with Kerl
-    flex
-    gnused
-    libGL
-    libGLU
-    libressl
-    ncurses
-    openjdk
-    # openssl
-    perl
-    termcap
-    unixODBC
-    wxGTK32
-    wxc
+    ## system utils
+    inotify-tools
 
-    # gnome
-    wmctrl
-    gnome-tweaks
-    ulauncher
-    wl-clipboard
-    copyq
+    ## pdf documents
+    wkhtmltopdf
 
-    # Gnome Extensions
-    gnomeExtensions.auto-move-windows
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.pop-shell
-    gnomeExtensions.space-bar
-    gnomeExtensions.system-monitor
-    gnomeExtensions.caffeine
-
+    # programming environments
+     mise
     elixir_1_18
     erlang_27
-    # ruby_3_4
-    # nodejs_23
+    ruby_3_4
+    nodejs_24
     go
 
-    file
-    image_optim
-    wkhtmltopdf
-    # jpegoptim
-    # optipng
-    # pngquant
-    # nodePackages.svgo
-    # gifsicle
+    # misc
+    cpufetch
+    neofetch
+    onefetch
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

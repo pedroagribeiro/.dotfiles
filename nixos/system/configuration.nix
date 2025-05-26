@@ -6,6 +6,7 @@
   config,
   pkgs,
   zen-browser,
+  cursor,
   ...
 }:
 
@@ -85,7 +86,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -125,26 +126,7 @@
       "wheel"
     ];
     packages = with pkgs; [
-      delta
-      bat
-      eza
-      jq
-      neovim
-      zsh
-      neofetch
-      onefetch
-      curl
-      wget
       git
-      docker
-      docker-compose
-      _1password
-      _1password-gui
-      git
-      vscode
-      jetbrains.idea-ultimate
-      maven
-      mise
     ];
     shell = pkgs.zsh;
   };
@@ -169,6 +151,7 @@
     wofi
     egl-wayland
     zen-browser.packages.${pkgs.system}.default
+    cursor.packages.${pkgs.system}.default
     home-manager
 
     #security
