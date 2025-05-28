@@ -13,7 +13,8 @@ with lib.hm.gvariant;
     wmctrl
     gnome-tweaks
     ulauncher
-    albert
+    webkitgtk_4_0 # ulauncher dependency
+    # albert
     wl-clipboard
     # copyq
 
@@ -31,32 +32,32 @@ with lib.hm.gvariant;
   #   enable = true;
   # };
 
-  xdg.configFile."autostart/albert.desktop".text = ''
-    [Desktop Entry]
-    Type=Application
-    Exec=albert
-    Hidden=false
-    X-GNOME-Autostart-enabled=true
-    Name=Albert
-    Comment=Keyboard launcher
-  '';
+  # xdg.configFile."autostart/albert.desktop".text = ''
+  #   [Desktop Entry]
+  #   Type=Application
+  #   Exec=albert
+  #   Hidden=false
+  #   X-GNOME-Autostart-enabled=true
+  #   Name=Albert
+  #   Comment=Keyboard launcher
+  # '';
 
-  # systemd.user.services.ulauncher = {
-  #   Unit = {
-  #     Description = "Linux Application Launcher";
-  #     Documentation = "https://ulauncher.io/";
-  #   };
-  #   Service = {
-  #     Type = "simple";
-  #     Restart = "always";
-  #     RestartSec = 1;
-  #     Environment = "GDK_BACKEND=x11";
-  #     ExecStart = "${pkgs.ulauncher}/bin/ulauncher --hide-window";
-  #   };
-  #   Install = {
-  #     WantedBy = [ "graphical-session.target" ];
-  #   };
-  # };
+  systemd.user.services.ulauncher = {
+    Unit = {
+      Description = "Linux Application Launcher";
+      Documentation = "https://ulauncher.io/";
+    };
+    Service = {
+      Type = "simple";
+      Restart = "always";
+      RestartSec = 1;
+      Environment = "GDK_BACKEND=x11";
+      ExecStart = "${pkgs.ulauncher}/bin/ulauncher --hide-window";
+    };
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
+    };
+  };
 
   dconf.settings = {
     "org/gnome/shell" = {
@@ -226,17 +227,17 @@ with lib.hm.gvariant;
       ];
     };
 
-    # "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-    #   name = "ULauncher";
-    #   command = "ulauncher-toggle";
-    #   binding = "<Alt>space";
-    # };
-
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      name = "Albert Launcher";
-      command = "albert toggle";
+      name = "ULauncher";
+      command = "ulauncher-toggle";
       binding = "<Alt>space";
     };
+
+    # "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+    #   name = "Albert Launcher";
+    #   command = "albert toggle";
+    #   binding = "<Alt>space";
+    # };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       name = "Terminal";

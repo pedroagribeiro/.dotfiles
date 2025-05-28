@@ -8,6 +8,8 @@
 with lib.hm.gvariant;
 
 {
+  nixpkgs.config.allowUnfree = true;
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "pedro";
@@ -58,7 +60,9 @@ with lib.hm.gvariant;
 
     # development tools
     mise
+    direnv
     bruno
+    dbeaver-bin
     k6
     llvmPackages_20.clang-tools
     shellcheck
@@ -106,7 +110,7 @@ with lib.hm.gvariant;
     wkhtmltopdf
 
     # programming environments
-     mise
+    mise
     elixir_1_18
     erlang_27
     ruby_3_4

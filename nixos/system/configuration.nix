@@ -35,6 +35,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.networkmanager.plugins = [ pkgs.networkmanager-vpnc ];
 
   # Set your time zone.
   time.timeZone = "Europe/Lisbon";
@@ -146,13 +147,15 @@
   environment.systemPackages = with pkgs; [
     google-chrome
     spotify
-    ulauncher
     ghostty
-    wofi
     egl-wayland
     zen-browser.packages.${pkgs.system}.default
     cursor.packages.${pkgs.system}.default
     home-manager
+
+    vpnc
+    vpnc-scripts
+    networkmanager-vpnc
 
     #security
     fprintd
