@@ -4,26 +4,32 @@ uuid=2ffbfb22-82ec-450f-9e22-3287971b148b
 type=vpn
 autoconnect=false
 interface-name=tun0
-timestamp=1723039813
 
 [vpn]
+Application Version=1
+Domain=ptin
+Enable weak authentication=yes
+Enable weak encryption=yes
 IKE DH Group=dh2
-IPSec ID=ALB-LINUX
-IPSec gateway=<company.gateway>
-IPSec secret-flags=1
+IPSec ID=<group-id-here>
+IPSec gateway=<gateway-ip-here>
+IPSec secret-flags=0
 Local Port=0
 NAT Traversal Mode=natt
 Perfect Forward Secrecy=server
 Vendor=cisco
 Xauth password-flags=2
-Xauth username=<company.username>
+Xauth username=<company-username-here>
 ipsec-secret-type=save
 xauth-password-type=ask
 service-type=org.freedesktop.NetworkManager.vpnc
 
+[vpn-secrets]
+IPSec secret=<group-password-here>
+
 [ipv4]
-dns=<comapany.dns>
-dns-search=<comany.dns_search_domains>
+dns=10.112.15.3;10.112.15.15;
+dns-search=ptin.corppt.com, ptc.corppt.com, ptcom.corppt.com, ptsi.corppt.com, telecom.pt, ptportugal.corppt.com
 method=auto
 
 [ipv6]
