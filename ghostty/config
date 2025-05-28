@@ -1,5 +1,5 @@
 theme = "Dark+"
-font-family = "GeistMono Nerd Font"
+font-family = "JetBrainsMono Nerd Font"
 font-size = 13
 
 shell-integration = zsh
