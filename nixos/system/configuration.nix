@@ -1,4 +1,4 @@
-# Edit this configuration file to define what should be installed on
+#o Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
@@ -127,7 +127,9 @@
       "wheel"
     ];
     packages = with pkgs; [
+      zip
       git
+      apple-cursor
     ];
     shell = pkgs.zsh;
   };
@@ -141,6 +143,19 @@
 
   # Fingerprint reader
   services.fprintd.enable = true;
+  
+  # Bluetooth battery display
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
+
+  services.upower.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -151,6 +166,7 @@
     egl-wayland
     zen-browser.packages.${pkgs.system}.default
     cursor.packages.${pkgs.system}.default
+    flameshot
     home-manager
 
     vpnc
@@ -167,6 +183,7 @@
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
     nerd-fonts.geist-mono
+    montserrat
   ];
 
   # List services that you want to enable:

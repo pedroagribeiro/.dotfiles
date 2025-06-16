@@ -28,6 +28,17 @@ with lib.hm.gvariant;
     gnomeExtensions.color-picker
   ];
 
+  home.file.".config/pop-shell/config.json".text = ''
+    {
+        "float": [
+            { "class": "Ulauncher" }
+        ],
+        "skiptaskbarhidden": [],
+        "log_on_focus": false
+    }
+  '';
+
+
   # services.copyq = {
   #   enable = true;
   # };
@@ -295,6 +306,8 @@ with lib.hm.gvariant;
       tile-move-up-global = [ "<Super><Shift>k" ];
       toggle-floating = [ "<Meta><Shift>Space" ];
     };
+
+    
 
     "org/gnome/shell/extensions/space-bar/behavior" = {
       always-show-numbers = false;

@@ -59,6 +59,7 @@ with lib.hm.gvariant;
     pkg-config
 
     # development tools
+    subversion
     mise
     direnv
     bruno
@@ -102,6 +103,7 @@ with lib.hm.gvariant;
     libreoffice
     zeal
     vscode
+    jetbrains.idea-ultimate
 
     ## system utils
     inotify-tools
@@ -116,6 +118,8 @@ with lib.hm.gvariant;
     ruby_3_4
     nodejs_24
     go
+    jdk17
+    maven
 
     # misc
     cpufetch
