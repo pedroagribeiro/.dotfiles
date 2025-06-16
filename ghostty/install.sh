@@ -10,4 +10,6 @@ cd "${BASE_DIR}/.." || exit 127
 # shellcheck source=../scripts/utils.sh
 . scripts/utils.sh
 
-mksymlink "$HOME/.dotfiles/ghostty/config" "$HOME/.config/ghostty/config"
+symlink_dir "$HOME/.dotfiles/ghostty/themes" "$HOME/.config/ghostty/themes"
+mksymlink   "$HOME/.dotfiles/ghostty/config" "$HOME/.config/ghostty/config"
+

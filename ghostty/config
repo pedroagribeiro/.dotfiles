@@ -1,5 +1,5 @@
-theme = "Dark+"
-font-family = "JetBrainsMono Nerd Font"
+theme = "poimandres.conf"
+font-family = "GeistMono Nerd Font"
 font-size = 13
 
 shell-integration = zsh
@@ -12,7 +12,6 @@ gtk-tabs-location = bottom
 adw-toolbar-style = flat
 
 cursor-style = block
-cursor-color = #ffffff
 
 background-opacity = 0.9
 background-blur-radius = 30
