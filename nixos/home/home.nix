@@ -64,6 +64,7 @@ with lib.hm.gvariant;
     direnv
     bruno
     dbeaver-bin
+    tableplus
     k6
     llvmPackages_20.clang-tools
     shellcheck
@@ -104,6 +105,8 @@ with lib.hm.gvariant;
     zeal
     vscode
     jetbrains.idea-ultimate
+    obs-studio
+    # davinci-resolve-studio
 
     ## system utils
     inotify-tools
@@ -113,6 +116,7 @@ with lib.hm.gvariant;
 
     # programming environments
     mise
+    python314
     elixir_1_18
     erlang_27
     ruby_3_4

@@ -1,6 +1,5 @@
 {
   "window.commandCenter": true,
-  "workbench.colorTheme": "poimandres-noitalics",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
@@ -11,7 +10,7 @@
   "editor.formatOnPaste": true,
   "editor.inlineSuggest.enabled": true,
   "editor.fontFamily": "GeistMono Nerd Font",
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.fontWeight": 550,
   "editor.experimentalInlineEdit.fontFamily": "GeistMono Nerd Font",
   "editor.inlineSuggest.fontFamily": "GeistMono Nerd Font",

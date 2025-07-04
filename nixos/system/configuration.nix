@@ -161,6 +161,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     google-chrome
+    brave
     spotify
     ghostty
     egl-wayland
@@ -183,6 +184,7 @@
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
     nerd-fonts.geist-mono
+    nerd-fonts.meslo-lg
     montserrat
   ];
 
