@@ -1,19 +1,20 @@
-theme = "poimandres.conf"
+theme = "Dark Modern"
 font-family = "GeistMono Nerd Font"
-font-size = 13
+font-size = 15
+font-thicken
 
 shell-integration = zsh
 
 window-theme = ghostty
 window-decoration = auto
-gtk-adwaita = true
+# gtk-adwaita = true
 gtk-wide-tabs = true
 gtk-tabs-location = bottom
 adw-toolbar-style = flat
 
 cursor-style = block
 
-background-opacity = 0.9
+background-opacity = 1.00
 background-blur-radius = 30
 
 keybind = alt+l=goto_split:right
