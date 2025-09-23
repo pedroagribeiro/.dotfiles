@@ -82,7 +82,6 @@ alias ip='ip -c=auto'
 
 alias activate-ssh='eval $(ssh-agent -s); ssh-add ~/.ssh/id_rsa'
 
-# Work Aliases
-alias agjobsch="cd $HOME/Code/alticelabs/git/agora-jobscheduler" 
-alias agbaa="cd $HOME/Code/alticelabs/git/agora-baa"
+# Nutrium
+alias nut='cd ~/Code/healthium/nutrium'
 

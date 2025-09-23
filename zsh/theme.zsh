@@ -2,7 +2,8 @@
 export ZSH=~/.oh-my-zsh
 export TERM="xterm-256color"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="starship"
 
 source $ZSH/oh-my-zsh.sh
 

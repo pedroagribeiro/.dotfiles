@@ -1,16 +1,21 @@
 #              _
 #             | |
-#      _______| |__  _ __ ___
+#      _______| |__  _l __ ___
 #     |_  / __| '_ \| '__/ __|
 #    _ / /\__ \ | | | | | (__
 #   (_)___|___/_| |_|_|  \___|
 #
+#
+# Asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 # Direnv
 eval "$(direnv hook zsh)"
 
 # Ruby
 # export PATH="/home/pedro/.local/share/gem/ruby/3.4.0/bin:$PATH"
 export PATH="/home/pedro/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # GoLang
 export ASDF_GOLANG_MOD_VERSION_ENABLED=true
@@ -31,7 +36,12 @@ for module in $(ls $DOTFILES/zsh/*.zsh); do
   source $module
 done
 
+# Aliases
 source $DOTFILES/zsh/aliases.zsh
+source $DOTFILES/zsh/nutrium/load.zsh
+
+autoload -U add-zsh-hook
+add-zsh-hook chpwd manage_nutrium_aliases
 
 # go to working directory if it has one
 gtwd
@@ -78,3 +88,6 @@ export PATH="$PATH:/mnt/c/Users/Pedro Ribeiro/AppData/Local/Programs/cursor/reso
 export PATH="$PATH:/home/pedro/.local/bin"
 
 if [ -e /home/pedro/.nix-profile/etc/profile.d/nix.sh ]; then . /home/pedro/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# Starship 
+eval "$(starship init zsh)"
