@@ -1,7 +1,6 @@
 {
   "window.commandCenter": true,
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "files.autoSave": "onFocusChange",
   "editor.renderWhitespace": "trailing",
@@ -10,14 +9,13 @@
   "editor.formatOnPaste": true,
   "editor.inlineSuggest.enabled": true,
   "editor.fontFamily": "GeistMono Nerd Font",
-  "editor.fontSize": 18,
-  "editor.fontWeight": 550,
+  "editor.fontSize": 15,
   "editor.experimentalInlineEdit.fontFamily": "GeistMono Nerd Font",
   "editor.inlineSuggest.fontFamily": "GeistMono Nerd Font",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "debug.console.fontFamily": "GeistMono Nerd Font",
   "terminal.integrated.fontFamily": "GeistMono Nerd Font",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "prettier.configPath": ".prettierrc",
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
@@ -32,12 +30,39 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "thunder-client.saveToWorkspace": true,
+  "[ruby]": {
+    "editor.formatOnSave": false
+  },
   "workbench.startupEditor": "none",
   "explorer.confirmDelete": false,
+  "explorer.autoReveal": false,
   "rubyLsp.rubyExecutablePath": "/usr/bin/ruby",
   "rubyLsp.addonSettings": {},
   "rubyLsp.rubyVersionManager": {
     "identifier": "auto"
-  }
+  },
+  "makefile.configureOnOpen": true,
+  "oneDarkPro.italic": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "rubyLsp.enabledFeatures": {
+    // "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": true,
+    "definition": true,
+    "workspaceSymbol": true,
+    "signatureHelp": true,
+    "typeHierarchy": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false
 }

@@ -4,11 +4,11 @@ BASE_DIR=$(dirname "${BASH_SOURCE[0]:-$0}")
 cd "${BASE_DIR}/.." || exit 127
 
 # shellcheck source=../scripts/execs.sh
-. scripts/execs.sh
+# . scripts/execs.sh
 # shellcheck source=../scripts/distro.sh
-. scripts/distro.sh
+# . scripts/distro.sh
 # shellcheck source=../scripts/utils.sh
-. scripts/utils.sh
+# . scripts/utils.sh
 
 
 LINUX_CONF_DIR="$HOME/.config/Code/User"
@@ -24,11 +24,5 @@ for extension in "${EXTENSIONS[@]}"; do
     code --install-extension $extension
 done
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    mkdir -p $MACOS_CONF_DIR
-    symlink "$HOME/.dotfiles/vscode/settings.json" "$MACOS_CONF_DIR/settings.json"
-else
-    mkdir -p $LINUX_CONF_DIR
-    symlink "$HOME/.dotfiles/vscode/settings.json" "$LINUX_CONF_DIR/settings.json"
-    cp "$HOME/.dotfiles/vscode/settings.json" "/mnt/c/Users/Pedro\ Ribeiro/AppData/Roaming/Code/User/settings.json"
-fi
+mkdir -p $MACOS_CONF_DIR
+ln -s "$HOME/.dotfiles/vscode/settings.json" "$MACOS_CONF_DIR/settings.json"
