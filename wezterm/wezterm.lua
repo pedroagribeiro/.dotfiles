@@ -11,13 +11,16 @@ local wezterm = require('wezterm')
 
 local config = wezterm.config_builder()
 
-config.default_domain = 'WSL:Ubuntu-24.04'
+config.window_decorations = "RESIZE"
+config.window_background_opacity = 0.9
+config.macos_window_background_blur = 30
+config.win32_system_backdrop = "Acrylic"
 
-config.color_scheme = "GitHub Dark"
-config.font = wezterm.font('Consolas NF')
-config.font_size = 12
+config.color_scheme = "Dark+"
+config.font = wezterm.font('GeistMono Nerd Font')
+config.font_size = 15
 
-config.enable_scroll_bar = true
+config.enable_scroll_bar = false
 
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false

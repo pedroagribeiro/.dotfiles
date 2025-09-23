@@ -12,4 +12,4 @@ cd "${BASE_DIR}/.." || exit 127
 
 # Install the aerospace package
 
-symlink "$HOME/.dotfiles/wezterm/wezterm.lua" "$HOME/.config/wezterm/wezterm.lua"
+mksymlink   "$HOME/.dotfiles/wezterm/wezterm.lua" "$HOME/.config/wezterm/wezterm.lua"
