@@ -12,6 +12,7 @@
   "editor.fontSize": 15,
   "editor.experimentalInlineEdit.fontFamily": "GeistMono Nerd Font",
   "editor.inlineSuggest.fontFamily": "GeistMono Nerd Font",
+  "editor.suggestFontFamily": "GeistMono Nerd Font",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "debug.console.fontFamily": "GeistMono Nerd Font",
   "terminal.integrated.fontFamily": "GeistMono Nerd Font",
@@ -64,5 +65,6 @@
     "signatureHelp": true,
     "typeHierarchy": true
   },
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.stickyScroll.enabled": false
 }
