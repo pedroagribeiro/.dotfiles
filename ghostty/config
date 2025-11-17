@@ -1,5 +1,5 @@
-theme = dark:Dark Modern, light:Raycast Light 
-font-family = "GeistMono Nerd Font"
+theme = dark:Dark Modern,light:Raycast Light
+font-family = "JetBrainsMono Nerd Font"
 font-size = 15
 font-thicken
 
