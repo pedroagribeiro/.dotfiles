@@ -8,15 +8,15 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "GeistMono Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontSize": 15,
-  "editor.experimentalInlineEdit.fontFamily": "GeistMono Nerd Font",
-  "editor.inlineSuggest.fontFamily": "GeistMono Nerd Font",
-  "editor.suggestFontFamily": "GeistMono Nerd Font",
+  "editor.experimentalInlineEdit.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.suggestFontFamily": "JetBrainsMono Nerd Font",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "debug.console.fontFamily": "GeistMono Nerd Font",
-  "terminal.integrated.fontFamily": "GeistMono Nerd Font",
-  "terminal.integrated.fontSize": 14,
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 14.5,
   "prettier.configPath": ".prettierrc",
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
@@ -66,5 +66,6 @@
     "typeHierarchy": true
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "terminal.integrated.stickyScroll.enabled": false
+  "terminal.integrated.stickyScroll.enabled": false,
+  "workbench.colorTheme": "GitHub Dark"
 }
