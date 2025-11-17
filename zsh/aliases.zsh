@@ -83,5 +83,5 @@ alias ip='ip -c=auto'
 alias activate-ssh='eval $(ssh-agent -s); ssh-add ~/.ssh/id_rsa'
 
 # Nutrium
-alias nut='cd ~/Code/healthium/nutrium'
+alias nut='cd ~/Code/healthium'
 
